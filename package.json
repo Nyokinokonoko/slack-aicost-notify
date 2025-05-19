@@ -1,0 +1,20 @@
+{
+  "name": "slack-aicost-notify",
+  "version": "1.0.0",
+  "description": "Slack bot to notify AI service costs (Claude, OpenAI, OpenRouter)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "test:claude": "node test.js --test=claude",
+    "test:openai": "node test.js --test=openai",
+    "test:openrouter": "node test.js --test=openrouter",
+    "test:slack": "node test.js --send-to-slack"
+  },
+  "author": "Kenny Ha",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1"
+  }
+}
