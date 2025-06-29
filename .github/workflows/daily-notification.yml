@@ -3,9 +3,9 @@ name: Daily AI Cost Notification
 on:
   push:
     branches: [main]
-  schedule:
+  # schedule:
     # Run at 8:00 AM JST (23:00 UTC)
-    - cron: "0 23 * * *"
+    # - cron: "0 23 * * *"
   workflow_dispatch: # Allow manual triggering
 
 jobs:
